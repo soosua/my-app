@@ -1,7 +1,7 @@
 import { Bell, MapPin } from 'lucide-react'
 import { useNavigate } from 'react-router-dom'
 import { useNotifications } from '../context/useNotifications'
-import logoIcon from '../assets/logo-icon.svg'
+import Logo from './Logo'
 import { user } from '../data/user'
 
 export default function HomeHeader() {
@@ -9,10 +9,7 @@ export default function HomeHeader() {
   const { unreadCount } = useNotifications()
   return (
     <header className="home-header">
-      <h1 className="home-brand">
-        <img src={logoIcon} width="26" height="26" alt="" />
-        <span>Re:Pick</span>
-      </h1>
+      <h1 className="home-brand"><Logo size={26} /></h1>
       <div className="home-header__tools">
         <span className="home-location"><MapPin size={18} strokeWidth={1.8} aria-hidden="true" />{user.city}</span>
         <button className="home-notifications" type="button" onClick={() => navigate('/notifications')} aria-label={unreadCount > 0 ? `알림, 안 읽은 알림 ${unreadCount}개` : '알림'}>

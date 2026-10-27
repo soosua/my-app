@@ -9,8 +9,7 @@
   color: #1a1f36;
 }
 .home-header { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
-.home-brand { display: flex; align-items: center; gap: 7px; margin: 0; font-size: 21px; font-weight: 900; letter-spacing: -0.7px; line-height: 28px; }
-.home-brand img { display: block; }
+.home-brand { margin: 0; }
 .home-header__tools { display: flex; align-items: center; gap: 14px; }
 .home-location { display: flex; align-items: center; gap: 5px; white-space: nowrap; font-size: 14px; font-weight: 700; letter-spacing: -0.5px; }
 .home-notifications { position: relative; display: grid; place-items: center; padding: 0; width: 24px; height: 28px; border: 0; background: transparent; color: inherit; cursor: pointer; }

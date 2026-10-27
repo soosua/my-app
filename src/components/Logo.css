@@ -1,0 +1,19 @@
+.brand-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  vertical-align: middle;
+}
+
+.brand-logo img {
+  display: block;
+  flex-shrink: 0;
+  object-fit: contain;
+}
+
+.brand-logo__text {
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 26px;
+  letter-spacing: -0.7px;
+}
