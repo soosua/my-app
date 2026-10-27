@@ -1,0 +1,49 @@
+.home-page {
+  --home-blue: #465fff;
+  --home-muted: #909bae;
+  width: 100%;
+  max-width: 393px;
+  min-height: 100svh;
+  margin-inline: auto;
+  padding: calc(12px + env(safe-area-inset-top, 0px)) 20px calc(104px + env(safe-area-inset-bottom, 0px));
+  color: #1a1f36;
+}
+.home-header { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.home-brand { display: flex; align-items: center; gap: 7px; margin: 0; font-size: 21px; font-weight: 900; letter-spacing: -0.7px; line-height: 28px; }
+.home-brand img { display: block; }
+.home-header__tools { display: flex; align-items: center; gap: 14px; }
+.home-location { display: flex; align-items: center; gap: 5px; white-space: nowrap; font-size: 14px; font-weight: 700; letter-spacing: -0.5px; }
+.home-notifications { position: relative; display: grid; place-items: center; padding: 0; width: 24px; height: 28px; border: 0; background: transparent; color: inherit; cursor: pointer; }
+.home-notifications__dot { position: absolute; top: 2px; right: 0; width: 8px; height: 8px; border: 1px solid white; border-radius: 50%; background: #5368ff; }
+.home-search { display: flex; align-items: center; gap: 9px; margin-top: 16px; height: 48px; padding: 0 20px; border-radius: 16px; background: #f3f4f6; color: var(--home-muted); }
+.home-search svg { flex-shrink: 0; }
+.home-search input { width: 100%; min-width: 0; padding: 0; border: 0; outline: 0; background: transparent; color: #1a1f36; font: inherit; font-size: 14px; letter-spacing: -0.5px; }
+.home-search input::placeholder { color: var(--home-muted); opacity: 1; }
+.home-search:focus-within { outline: 2px solid var(--home-blue); outline-offset: 2px; }
+.home-categories { display: flex; align-items: center; gap: 16px; overflow-x: auto; margin-top: 15px; padding: 0 0 2px; scrollbar-width: thin; }
+.home-category { flex-shrink: 0; min-height: 36px; padding: 0 16px; border: 0; border-radius: 999px; background: #f3f4f6; color: var(--home-muted); font: inherit; font-size: 13px; font-weight: 700; letter-spacing: -0.6px; white-space: nowrap; cursor: pointer; }
+.home-category--selected { background: #435cf0; color: #fff; }
+.home-stats { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 9px; margin-top: 13px; }
+.home-stat { display: flex; align-items: center; gap: 10px; min-height: 52px; padding: 9px 14px; border-radius: 16px; background: #eef1ff; }
+.home-stat__icon { flex: 0 0 32px; height: 32px; display: grid; place-items: center; border-radius: 50%; background: #fff; color: var(--home-blue); }
+.home-stat__label { margin: 0; color: var(--home-muted); font-size: 11px; font-weight: 500; line-height: 15px; letter-spacing: -0.4px; }
+.home-stat__value { margin: 1px 0 0; font-size: 16px; font-weight: 800; line-height: 20px; letter-spacing: -0.3px; white-space: nowrap; }
+.home-page button:focus-visible { outline: 2px solid var(--home-blue); outline-offset: 2px; }
+@media (max-width: 360px) {
+  .home-stat { padding-inline: 10px; gap: 7px; }
+  .home-stat__value { font-size: 14px; }
+  .home-header__tools { gap: 10px; }
+}
+
+.closing-soon { margin-top: 24px; }
+.closing-soon__header { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-bottom: 18px; }
+.closing-soon__header h2 { display: flex; align-items: center; gap: 4px; margin: 0; font-size: 18px; font-weight: 800; line-height: 26px; letter-spacing: -0.7px; }
+.closing-soon__header h2 svg { color: var(--home-blue); flex-shrink: 0; }
+.closing-soon__header p { margin: 3px 0 0; color: var(--home-muted); font-size: 12px; line-height: 18px; letter-spacing: -0.4px; }
+.closing-soon__all { display: inline-flex; align-items: center; gap: 2px; flex-shrink: 0; padding: 4px 0; border: 0; background: transparent; color: var(--home-blue); font: inherit; font-size: 12px; font-weight: 700; letter-spacing: -0.5px; cursor: pointer; }
+.product-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+@media (max-width: 360px) {
+  .closing-soon__header p { font-size: 10px; }
+  .closing-soon__all { font-size: 11px; }
+  .product-grid { gap: 10px; }
+}

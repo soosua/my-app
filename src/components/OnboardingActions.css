@@ -1,0 +1,35 @@
+.onboarding-actions { margin-top: auto; padding-top: 40px; }
+.onboarding-actions button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  min-height: 56px;
+  border: 0;
+  border-radius: 16px;
+  font: inherit;
+  font-size: 16px;
+  font-weight: 750;
+  letter-spacing: -0.5px;
+  cursor: pointer;
+}
+.start-button { background: #1a1f36; color: #fff; }
+.start-button:disabled { background: #f3f4f6; color: #c2c6d5; cursor: default; }
+.onboarding-divider {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 18px 0;
+  color: #949ab8;
+  font-size: 12px;
+  line-height: 16px;
+}
+.onboarding-divider::before, .onboarding-divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: #e5e7eb;
+}
+.kakao-button { background: #fee500; color: #191600; }
+.onboarding-actions button:focus-visible { outline: 3px solid #949ab8; outline-offset: 3px; }

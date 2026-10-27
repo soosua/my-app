@@ -1,0 +1,20 @@
+.explore-page { width: 100%; max-width: 393px; min-height: 100svh; margin-inline: auto; color: #1a1f36; background: #f7f8fa; }
+.explore-header { padding: calc(18px + env(safe-area-inset-top, 0px)) 20px 22px; background: #fff; }
+.explore-header h1 { margin: 0; font-size: 24px; font-weight: 800; line-height: 32px; letter-spacing: -0.8px; }
+.explore-search { display: flex; align-items: center; gap: 10px; height: 48px; margin-top: 18px; padding: 0 20px; border-radius: 16px; background: #f3f4f6; color: #909bae; }
+.explore-search svg { flex-shrink: 0; }
+.explore-search input { width: 100%; min-width: 0; border: 0; padding: 0; outline: 0; background: transparent; color: #1a1f36; font: inherit; font-size: 14px; letter-spacing: -0.6px; }
+.explore-search input::placeholder { color: #909bae; opacity: 1; }
+.explore-search:focus-within { outline: 2px solid #465fff; outline-offset: 2px; }
+.explore-content { padding: 22px 20px calc(104px + env(safe-area-inset-bottom, 0px)); }
+.explore-categories-title { margin: 0 0 14px; color: #949ab8; font-size: 12px; line-height: 16px; font-weight: 700; }
+.explore-categories { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px 7px; }
+.explore-category { display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 9px; min-width: 0; height: 84px; padding: 10px 3px; border: 1.5px solid transparent; border-radius: 16px; background: #fff; color: #1a1f36; font: inherit; font-size: 12px; font-weight: 700; letter-spacing: -0.5px; box-shadow: 0 2px 3px #1a1f3604; cursor: pointer; }
+.explore-category--selected { border-color: #465fff; color: #465fff; }
+.explore-category:focus-visible { outline: 2px solid #465fff; outline-offset: 2px; }
+.explore-results { margin-top: 26px; }
+.explore-results__header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 14px; }
+.explore-results__header h2 { margin: 0; font-size: 16px; font-weight: 800; line-height: 20px; letter-spacing: -0.6px; }
+.explore-results__header > span { color: #949ab8; font-size: 12px; font-weight: 600; }
+.explore-product-list { display: grid; gap: 10px; }
+.explore-empty { margin: 0; padding: 48px 12px; color: #909bae; text-align: center; font-size: 14px; }

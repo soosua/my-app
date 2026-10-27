@@ -1,0 +1,6 @@
+.coming-soon { display: flex; flex-direction: column; width: 100%; max-width: 393px; min-height: 100svh; margin-inline: auto; padding-bottom: calc(104px + env(safe-area-inset-bottom, 0px)); background: #f7f8fa; color: #1a1f36; }
+.coming-soon header { display: flex; align-items: center; gap: 8px; padding: calc(18px + env(safe-area-inset-top, 0px)) 16px 20px; background: #fff; }
+.coming-soon header button { display: grid; place-items: center; width: 32px; height: 32px; padding: 0; border: 0; background: transparent; color: inherit; cursor: pointer; }
+.coming-soon h1 { margin: 0; font-size: 22px; line-height: 32px; letter-spacing: -0.7px; }
+.coming-soon__content { display: grid; place-items: center; flex: 1; min-height: 240px; color: #949ab8; font-size: 16px; }
+.coming-soon button:focus-visible { outline: 2px solid #465fff; outline-offset: 2px; }

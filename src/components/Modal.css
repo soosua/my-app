@@ -1,0 +1,10 @@
+.app-modal { width: min(340px, calc(100% - 40px)); max-height: calc(100svh - 48px); padding: 26px 22px 20px; border: 0; border-radius: 20px; background: #fff; color: #1a1f36; box-shadow: 0 12px 48px #1a1f3629; }
+.app-modal::backdrop { background: #1a1f3666; }
+.app-modal h2 { margin: 0; font-size: 18px; line-height: 28px; letter-spacing: -0.6px; word-break: keep-all; }
+.app-modal__body { margin-top: 12px; color: #909bae; font-size: 14px; line-height: 22px; word-break: keep-all; }
+.app-modal__body p { margin: 0; }
+.app-modal__actions { display: flex; gap: 8px; margin-top: 24px; }
+.app-modal__actions button { flex: 1; min-height: 44px; padding: 10px; border: 0; border-radius: 12px; font: inherit; font-size: 14px; font-weight: 700; cursor: pointer; }
+.app-modal__cancel { color: #6e788e; background: #f3f4f6; }
+.app-modal__confirm { color: #fff; background: #465fff; }
+.app-modal button:focus-visible { outline: 2px solid #465fff; outline-offset: 3px; }

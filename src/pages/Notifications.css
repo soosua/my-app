@@ -1,0 +1,38 @@
+.notifications-page {
+  width: 100%;
+  max-width: 393px;
+  min-height: 100svh;
+  margin-inline: auto;
+  padding: calc(16px + env(safe-area-inset-top, 0px)) 20px calc(104px + env(safe-area-inset-bottom, 0px));
+  background: #fff;
+  color: #1a1f36;
+}
+.notifications-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 16px; }
+.notifications-header h1 { margin: 0; font-size: 20px; font-weight: 800; line-height: 28px; letter-spacing: -0.7px; }
+.notifications-header button { display: grid; place-items: center; width: 36px; height: 36px; padding: 0; border: 0; background: transparent; color: #949ab8; cursor: pointer; }
+.notifications-list { display: grid; gap: 8px; margin: 0; padding: 0; list-style: none; }
+.notification-card {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  width: 100%;
+  min-height: 72px;
+  padding: 14px;
+  border: 0;
+  border-radius: 16px;
+  background: #f7f8fa;
+  color: inherit;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+.notification-card--unread { background: #ecefff; }
+.notification-card__icon { display: grid; place-items: center; flex: 0 0 40px; height: 40px; border-radius: 50%; background: #fff; color: #949ab8; }
+.notification-card--unread .notification-card__icon { color: #465fff; }
+.notification-card__copy { flex: 1; min-width: 0; padding-top: 1px; }
+.notification-card__content { display: block; font-size: 13px; font-weight: 700; line-height: 20px; letter-spacing: -0.45px; word-break: keep-all; overflow-wrap: anywhere; }
+.notification-card__time { display: block; margin-top: 5px; font-size: 12px; line-height: 17px; color: #949ab8; letter-spacing: -0.3px; }
+.notification-card--unread .notification-card__copy { padding-right: 12px; }
+.notification-card__dot { position: absolute; top: 20px; right: 15px; width: 8px; height: 8px; border-radius: 50%; background: #465fff; }
+.notifications-page button:focus-visible { outline: 2px solid #465fff; outline-offset: 2px; }
